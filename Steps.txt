@@ -1,0 +1,11 @@
+CREDENTIALS 
+ai_resume
+Lol123$#12
+
+1. Setup vite , ShadCn
+2. Routing => / -> Home , App => /dashboard , /sign-in & Clerk Setup 
+3. Signin , Header .
+4. Strapi Setup 
+5. FUNCTIONALITIES-
+=>Create New Resume 
+
