@@ -1,11 +1,37 @@
-CREDENTIALS 
-ai_resume
-Lol123$#12
-
-1. Setup vite , ShadCn
+#STEPS
+1. Setup vite , ShadCn 
 2. Routing => / -> Home , App => /dashboard , /sign-in & Clerk Setup 
-3. Signin , Header .
+3. Signin , Header 
 4. Strapi Setup 
 5. FUNCTIONALITIES-
-=>Create New Resume 
+=>Create New Resume -> Add button - Dialog box [ add title and create , cancel resume button] - API connection ,  Unique resume id , title , username , Email id store on database - Shift to Edit window.
+=>For Edit Window and further.
+-Dynamic routing with resume id to open edit window for particular Resume and let its navigation.
+-All previous resume should show with the Add resume card for a particular Email with navigation to edit window on click.
+=>2 screens => #Editing Screen and #Preview Screen.
+-For seeing real time changes , we have to use ContextAPI.
+-By using the dummy data , we design the whole preview section 
+-We gonna build various Forms for getting data and by the use of context API , we can see the real time changes
+-Next button should be disabled , until save and as we click on next button , The data should be visible thats why use the defaultValue
+-On save , store data in database/CMS with loader+Toaster functionallity 
+
+
+
+
+#ISSUES 
+-Now when data is saved , the it must show those CMS details on Preview side , rather than dummy details 
+
+#Add Features in Resume form my side and rearrange it as well
+->Update Home page  UI ,Logo & Name
+->Profile Links on the very top [Gmail,linkedin,Github,Portfolio]
+->Rearrange Sections
+->Highlist Headings and SubHeadings Properly for ATS & Make Design more simplistic and Concise to make resume just 1 Page
+->Make things in points and not para + Highlighting Feature add 
+->Update Eductaion in Table Format with Highlighted point at bottom
+->Make skills minimilistic and concise + Title and then Skills 
+->Project Section with live links 
+->TIPS section for each section , below the Editor  [BY 3-4 Videos ,Aryan Resume+Template  and AI ]
+->Positions of Responsibility section 
+->Give a Feature to make a Dynamic section , if wants to add [Language, Academic and Extracurricular Achievements , Certification Section ]
+ 
 

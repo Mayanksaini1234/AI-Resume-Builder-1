@@ -5,17 +5,17 @@ import { Button } from "../ui/button";
 const Header = () => {
   const { user, isSignedIn, isLoaded } = useUser();
   return (
-    <div className="flex justify-between items-center p-4 w-full shadow-md">
-      <Link to={"/dashboard"}>
+    <div className="flex justify-between items-center p-2 w-full shadow-md">
+      <Link to={"/"}>
         <img
-          src="/logo.svg"
+          src="/logo.png"
           alt="logo"
-          className=" cursor-pointer w-[70px] h-[40px] "
+          className=" cursor-pointer w-[80px] h-[80px] "
         />
       </Link>
       {!isSignedIn ? (
         <Link to={"/auth/sign-in"}>
-          <Button className="h-[5]">Get Started</Button>
+          <Button >Get Started</Button>
         </Link>
       ) : (
         <div className="flex gap-6 items-center">

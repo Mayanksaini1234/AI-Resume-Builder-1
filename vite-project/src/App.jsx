@@ -1,13 +1,19 @@
-import { UserButton, useUser } from '@clerk/clerk-react'
-import React from 'react'
+import { useUser } from '@clerk/clerk-react'
+import { Toaster } from "@/components/ui/sonner"
+import React, { useEffect } from 'react'
 import {Outlet, useNavigate} from "react-router-dom"
 const App = () => {
   const {user, isSignedIn , isLoaded} = useUser();
   const navigate = useNavigate();
-!isSignedIn&&isLoaded && navigate("/auth/sign-in")
+useEffect(()=>{
+  if(isLoaded&&!isSignedIn){
+    navigate("/auth/sign-in")
+  }
+}, [navigate, isSignedIn , isLoaded])
   return (
     <div>
       <Outlet/>
+      <Toaster/>
     </div>
 
   )
